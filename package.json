@@ -1,0 +1,56 @@
+{
+  "name": "5.-capstone",
+  "version": "1.0.0",
+  "description": "Travel app",
+  "main": "index.js",
+  "jest": {
+    "testEnvironment": "node",
+    "coveragePathIgnorePatterns": [
+      "/node_modules/"
+    ]
+  },
+  "scripts": {
+    "testy": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest",
+    "start": "node ./src/server/server.js",
+    "build-prod": "webpack --config webpack.prod.js",
+    "build-dev": "webpack serve --config webpack.dev.js --open"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/polyfill": "^7.12.1",
+    "axios": "^0.21.1",
+    "babel": "^6.23.0",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "net": "^1.0.2",
+    "optimize-css-assets-webpack-plugin": "^5.0.4",
+    "workbox-webpack-plugin": "^6.1.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.10",
+    "@babel/preset-env": "^7.12.11",
+    "@webpack-cli/serve": "^1.2.2",
+    "babel-loader": "^8.2.2",
+    "clean-webpack-plugin": "^3.0.0",
+    "css-loader": "^5.0.1",
+    "dotenv": "^8.2.0",
+    "file-loader": "^6.2.0",
+    "html-loader": "^1.3.2",
+    "html-webpack-plugin": "^4.5.1",
+    "jest": "^26.6.3",
+    "mini-css-extract-plugin": "^1.3.5",
+    "mocha": "^8.3.0",
+    "node-sass": "^5.0.0",
+    "really-need": "^1.9.2",
+    "sass": "^1.32.5",
+    "sass-loader": "^10.1.1",
+    "style-loader": "^2.0.0",
+    "supertest": "^6.1.3",
+    "webpack": "^5.19.0",
+    "webpack-cli": "^4.4.0",
+    "webpack-dev-server": "^3.11.2"
+  }
+}

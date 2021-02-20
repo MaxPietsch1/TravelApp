@@ -1,0 +1,101 @@
+@media screen and (min-width: 1400px) {
+  .weather-app {
+    .cityname-header {
+      #explore-today {
+        font-size: 48px;
+      }
+      .anyday {
+        font-size: 130px;
+      }
+    }
+  }
+
+  .output {
+    .output-top {
+      #days-left {
+        font-size: 34px;
+      }
+    }
+  }
+  .input {
+    #user-city-input,
+    .countdown-departure,
+    #generate {
+      font-size: 18px;
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .input {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0;
+    height: 35vh;
+    transform: translateY(-20%);
+
+    #user-city-input {
+      // border-radius: 0;
+      height: 5vh;
+      width: 90vw;
+      text-align: center;
+      padding: 0;
+    }
+
+    .countdown-departure {
+      // border-radius: 0;
+      height: 5vh;
+      width: 90vw;
+      margin: 0.5vh 0 3vh 0;
+
+      select {
+        width: 100%;
+        background: white;
+      }
+    }
+
+    #generate {
+      // position: absolute;
+      // right: 5vw;
+      height: 5vh;
+      width: 90vw;
+    }
+  }
+
+  .weather-app {
+    .cityname-header {
+      margin: 0;
+      #explore-today {
+        font-size: 24px;
+      }
+      .anyday {
+        font-size: 72px;
+        padding-right: 8vw;
+      }
+      .anyday-active {
+        font-size: calc(1.5em + 4vw);
+        margin-bottom: 10vh;
+      }
+    }
+  }
+
+  .output {
+    .output-top {
+      flex-direction: column;
+      margin: 0;
+
+      .pixabay {
+        width: 300px;
+        #pixabay-image {
+          margin-top: 5vh;
+        }
+      }
+    }
+  }
+
+  .weather-degrees {
+    grid-template-columns: repeat(4, 1fr);
+    width: 80;
+  }
+}
